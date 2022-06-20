@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>922</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>941</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-5</y>
+       <width>935</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/Location_cars-01.jpg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>922</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuG_stion_de_parc_automobile">
+    <property name="title">
+     <string>Géstion de parc automobile</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuSupprimer_voiture">
+      <property name="title">
+       <string>Supprimer voiture</string>
+      </property>
+      <addaction name="actionSuppression_d_une_voiture_donn_e"/>
+      <addaction name="separator"/>
+      <addaction name="actionSuppression_des_voitures_d_une_marque_donn_e"/>
+      <addaction name="separator"/>
+      <addaction name="actionSuppression_des_voitures_age_10_ans"/>
+     </widget>
+     <widget class="QMenu" name="menuModifier_voiture">
+      <property name="title">
+       <string>Modifier voiture</string>
+      </property>
+      <addaction name="actionPrix"/>
+      <addaction name="separator"/>
+      <addaction name="actionCouleur"/>
+     </widget>
+     <addaction name="actionAjouter_voiture"/>
+     <addaction name="separator"/>
+     <addaction name="menuSupprimer_voiture"/>
+     <addaction name="separator"/>
+     <addaction name="menuModifier_voiture"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_Affichage">
+     <property name="title">
+      <string>Recherche ,Affichage</string>
+     </property>
+     <addaction name="actionContenu_du_dictionnaire_voitures"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_par_matricule"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_par_marque"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_par_couleur"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_par_voitures_disponibles"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_des_voitures_lou_es"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_des_voitures_lou_es_entre_2_dates"/>
+    </widget>
+    <addaction name="menuMise_jour"/>
+    <addaction name="separator"/>
+    <addaction name="menuRecherche_Affichage"/>
+   </widget>
+   <widget class="QMenu" name="menuGestion_des_clients">
+    <property name="title">
+     <string>Gestion des clients</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_2">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuModifier_les_donn_es_d_un_client">
+      <property name="title">
+       <string>Modifier les données d'un client</string>
+      </property>
+      <addaction name="actionAdresse"/>
+      <addaction name="separator"/>
+      <addaction name="actionT_l_phone"/>
+      <addaction name="separator"/>
+      <addaction name="actionmail"/>
+     </widget>
+     <addaction name="actionAjouter_un_nouvel_client"/>
+     <addaction name="separator"/>
+     <addaction name="actionSupprimer_un_client"/>
+     <addaction name="separator"/>
+     <addaction name="menuModifier_les_donn_es_d_un_client"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_affichage">
+     <property name="title">
+      <string>Recherche ,affichage</string>
+     </property>
+     <addaction name="actionContenu_du_dictionnaire_clients"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_par_CIN"/>
+    </widget>
+    <addaction name="menuMise_jour_2"/>
+    <addaction name="separator"/>
+    <addaction name="menuRecherche_affichage"/>
+   </widget>
+   <widget class="QMenu" name="menuGestion_des_locations">
+    <property name="title">
+     <string>Gestion des locations</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_3">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuModifier_les_donn_es_d_une_location">
+      <property name="title">
+       <string>Modifier les données d'une location</string>
+      </property>
+      <addaction name="actionDate_de_location"/>
+      <addaction name="separator"/>
+      <addaction name="actionDur_e"/>
+     </widget>
+     <addaction name="actionAjouter_une_nouvelle_location"/>
+     <addaction name="separator"/>
+     <addaction name="actionSupprimer_une_location"/>
+     <addaction name="separator"/>
+     <addaction name="menuModifier_les_donn_es_d_une_location"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_affichage_2">
+     <property name="title">
+      <string>Recherche ,affichage</string>
+     </property>
+     <addaction name="actionContenu_du_dictionnaire_locations"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_par_CIN_2"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_par_mat"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_par_date_donn_e"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_par_dur_e_de_location"/>
+     <addaction name="separator"/>
+     <addaction name="actionRecherche_des_locations_entre_2_dates_donn_es"/>
+    </widget>
+    <addaction name="menuMise_jour_3"/>
+    <addaction name="separator"/>
+    <addaction name="menuRecherche_affichage_2"/>
+   </widget>
+   <widget class="QMenu" name="menuEnregistrement_et_recup_ration_dans_un_fichier">
+    <property name="title">
+     <string>Enregistrement et récupération dans un fichier</string>
+    </property>
+    <addaction name="actionEnregistrement_fichier_voitures"/>
+    <addaction name="actionR_cuperation_fichier_VOITURES"/>
+    <addaction name="separator"/>
+    <addaction name="actionEnregistrement_fichier_CLIENTS"/>
+    <addaction name="actionR_cuperation_fichier_Clients"/>
+    <addaction name="separator"/>
+    <addaction name="actionEnregistrement_fichier_LOCATONS"/>
+    <addaction name="actionR_cuperation_fichier_LOCATIONS"/>
+   </widget>
+   <addaction name="menuG_stion_de_parc_automobile"/>
+   <addaction name="menuGestion_des_clients"/>
+   <addaction name="menuGestion_des_locations"/>
+   <addaction name="menuEnregistrement_et_recup_ration_dans_un_fichier"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAjouter_voiture">
+   <property name="text">
+    <string>Ajouter voiture</string>
+   </property>
+  </action>
+  <action name="actionSuppression_d_une_voiture_donn_e">
+   <property name="text">
+    <string>Suppression d'une voiture donnée</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_voitures_d_une_marque_donn_e">
+   <property name="text">
+    <string>Suppression des voitures d'une marque donnée</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_voitures_age_10_ans">
+   <property name="text">
+    <string>Suppression des voitures (age&gt;10 ans)</string>
+   </property>
+  </action>
+  <action name="actionPrix">
+   <property name="text">
+    <string>Prix</string>
+   </property>
+  </action>
+  <action name="actionCouleur">
+   <property name="text">
+    <string>Couleur</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_voitures">
+   <property name="text">
+    <string>Contenu du dictionnaire voitures</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_matricule">
+   <property name="text">
+    <string>Recherche par matricule</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_marque">
+   <property name="text">
+    <string>Recherche par marque</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_couleur">
+   <property name="text">
+    <string>Recherche par couleur</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_voitures_disponibles">
+   <property name="text">
+    <string>Recherche des voitures disponibles</string>
+   </property>
+  </action>
+  <action name="actionRecherche_des_voitures_lou_es">
+   <property name="text">
+    <string>Recherche des voitures louées</string>
+   </property>
+  </action>
+  <action name="actionRecherche_des_voitures_lou_es_entre_2_dates">
+   <property name="text">
+    <string>Recherche des voitures louées entre 2 dates</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_nouvel_client">
+   <property name="text">
+    <string>Ajouter un nouvel client</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_un_client">
+   <property name="text">
+    <string>Supprimer un client</string>
+   </property>
+  </action>
+  <action name="actionAdresse">
+   <property name="text">
+    <string>Adresse</string>
+   </property>
+  </action>
+  <action name="actionT_l_phone">
+   <property name="text">
+    <string>Téléphone</string>
+   </property>
+  </action>
+  <action name="actionmail">
+   <property name="text">
+    <string>mail</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_clients">
+   <property name="text">
+    <string>Contenu du dictionnaire clients</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_CIN">
+   <property name="text">
+    <string>Recherche par CIN</string>
+   </property>
+  </action>
+  <action name="actionAjouter_une_nouvelle_location">
+   <property name="text">
+    <string>Ajouter une nouvelle location</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_une_location">
+   <property name="text">
+    <string>Supprimer une location</string>
+   </property>
+  </action>
+  <action name="actionDate_de_location">
+   <property name="text">
+    <string>Date de location</string>
+   </property>
+  </action>
+  <action name="actionDur_e">
+   <property name="text">
+    <string>Durée</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_locations">
+   <property name="text">
+    <string>Contenu du dictionnaire locations</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_CIN_2">
+   <property name="text">
+    <string>Recherche par CIN</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_mat">
+   <property name="text">
+    <string>Recherche par mat</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_date_donn_e">
+   <property name="text">
+    <string>Recherche par date donnée</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_dur_e_de_location">
+   <property name="text">
+    <string>Recherche par durée de location</string>
+   </property>
+  </action>
+  <action name="actionRecherche_des_locations_entre_2_dates_donn_es">
+   <property name="text">
+    <string>Recherche des locations entre 2 dates données</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_voitures">
+   <property name="text">
+    <string>Enregistrement fichier VOITURES</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_CLIENTS">
+   <property name="text">
+    <string>Enregistrement fichier CLIENTS</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_LOCATONS">
+   <property name="text">
+    <string>Enregistrement fichier LOCATONS</string>
+   </property>
+  </action>
+  <action name="actionR_cuperation_fichier_VOITURES">
+   <property name="text">
+    <string>Récuperation fichier VOITURES</string>
+   </property>
+  </action>
+  <action name="actionR_cuperation_fichier_Clients">
+   <property name="text">
+    <string>Récuperation fichier CLIENTS</string>
+   </property>
+  </action>
+  <action name="actionR_cuperation_fichier_LOCATIONS">
+   <property name="text">
+    <string>Récuperation fichier LOCATIONS</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res_msgbox.qrc"/>
+ </resources>
+ <connections/>
+</ui>

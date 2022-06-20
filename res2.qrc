@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="images">
+    <file>mercedes.jpg</file>
+  </qresource>
+  <qresource prefix="mer">
+    <file>mercedes.jpg</file>
+  </qresource>
+</RCC>
